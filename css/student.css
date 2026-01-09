@@ -1,0 +1,182 @@
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+                body {
+            font-family: Arial, sans-serif;
+            /* Sets the font for the body */
+            margin: 0;
+            /* Removes default margins */
+            background-color: #ffffff;
+            /* Light gray background color */
+            background-image: url("../images/a2.jpg");
+            background-size: cover;          /* Image covers full body*/
+            background-repeat: no-repeat;    /* No tiling*/
+            background-position: center;     /* Centered */
+                    height: 880px;
+            background-attachment: fixed;
+
+        }
+
+        /*  Container for items inside header */
+        .header-container {
+            background-color:rgb(206, 146, 6); /* Header background */
+            padding: 10px 20px;                   /* Adds space inside the header */
+            display: flex;                 /* Enables flexbox layout */
+            align-items: center;           /* Vertically center items */
+            justify-content: center; /* centers horizontally */
+        }
+
+        /*  Logo styling */
+        .logo img {
+            padding: 10px;
+            border-radius: 100px;
+            width: 150px;   /* Set logo width (increase/decrease size here) */
+            height: auto;   /* Auto height to maintain aspect ratio */
+        }
+
+        /*  Text container styling */
+        .header-text {
+              margin-left: 0px;          /* Space between logo and text */
+        }
+
+        /*  Main heading (college name) */
+        .header-text h1 {
+            margin: 0;          /* Remove default margin */
+            font-size: 35px;    /* Font size */
+            color: #002244;     /* Dark blue color */
+            font-weight: bold;          /* Makes the text bold */
+            letter-spacing: 2px;
+            text-shadow: 3px 3px 5px #dfae0f;    /* 1 3px is for horizontal offset-> rgt by 3px, 2 3px for vertically offset ->down by 3px and 5px is for blur radius (soft/fuzzy) etc*/
+        }
+       .header-text h2 {
+            margin: 0;          /* Remove default margin */
+            font-size: 40px;    /* Font size */
+            color: #002244;     /* Dark blue color */
+            font-weight: bold;          /* Makes the text bold */
+            letter-spacing: 2px;
+        }
+
+        /*  Subheading (affiliation) */
+        .header-text p {
+            margin: 0;          /* Remove default margin */
+            font-size: 25px;    /* Slightly smaller font */
+            color: #002244;     /* Medium blue */
+            font-weight: bold;      /* Makes the text bold */
+            letter-spacing: 2px;
+        }
+
+        /* for changing the color of the background of the  HOME ABOUT US COURSES ADMISSIONS AND CONTACT*/
+        nav {
+            background-color: #004080;
+            /* Dark background for navigation bar */
+            overflow: hidden;
+            /* Prevents content from overflowing */
+        }
+
+        nav a {
+            float: left;
+            /* Aligns links to the left */
+            color: white;
+            /* Link text color */
+            text-align: center;
+            /* Centers text inside link */
+            padding: 14px 20px;
+            /* Padding around link text */
+            text-decoration: none;
+            /* Removes underline from links */
+            border-right: 1px solid #ffffff;
+            /* Adds a right border to each link */
+            border-top: 1px solid #ffffff; 
+            /* Adds a top border to each link */
+        }
+
+        nav a.active {
+            background-color: #2d6fb0; /* Darker shade */
+            color: #ffffff;            /* Keep text white */
+        }
+
+        nav a:hover {
+            background-color: #90c3c3;
+            /* Changes background when mouse hovers */
+        }
+
+        .container {
+            padding: 100px;
+            /* Padding around content */
+        }
+        .Student {
+            background-color: rgb(255, 255, 255);
+            /* White background for about section */
+            padding: 20px;
+            border-radius: 8px;
+            /* Rounded corners */
+        }
+
+
+
+
+
+
+/* ------for blue footer section------- */
+        .bottom-info {
+            width: 100%;
+            padding: 25px 5px;
+            background: #004080;
+            color: #efefef;
+            display: flex;
+            text-align: center;
+            
+        }
+
+/*-------for adding flex batween three divs-------  */
+        .bottom-info .col-1, 
+        .bottom-info .col-3,
+        .bottom-info .col-2{
+                flex: 1;
+        }
+        
+        /* ---for the all words in th header */
+        .bottom-info div h5{
+            margin-bottom: 30px;
+            letter-spacing: 1px;            
+        }
+    
+    /* -----for links in the 1st div------ */
+        .col-1 a{
+            display: block;
+            text-decoration: none;
+            color: #efefef;
+            margin-bottom: 10px;   
+        }
+        .col-2 .rounded-img {
+            border-radius: 100px;
+        }
+
+    /* ---- for editing the icons that we used in the col-2----- */
+        .social-icons{
+            margin-top: 50px;
+        }
+        .social-icons i{
+            color: white;      /* Default color */
+            font-size: 25px;   /* Optional: change size */
+            margin: 10px;
+            cursor: pointer;
+        }
+        .social-icons i:hover {
+            color: #90c3c3;    /* Color on hover */
+        }
+
+        footer {
+            background-color: #d34f03;
+            /* Same dark blue as header */
+            color: white;
+            /* White text */
+            text-align: center;
+            /* Centered text */
+            padding: 15px 0;
+            /* Padding top and bottom */
+            width: 100%;
+            /* Full width */
+        }

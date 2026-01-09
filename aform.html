@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!-- This declares the document type and version as HTML5 -->
+
+<html lang="en">
+<!-- Starts the HTML document, language set to English -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Sets character encoding to UTF-8 (supports all characters) -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Makes the website responsive on all devices -->
+
+    <meta name="description" content="SGAD College Khadur Sahib - Excellence in education, innovation, and research.">
+    <!-- Description for search engines -->
+
+    <title>SGAD College</title>
+    <!-- The title of the web page (shown on browser tab) -->
+
+    <link rel="icon" type="image/png" href="images/a1111.png">
+    <!-- Favicon for the website -->
+
+    <link rel="stylesheet" href="css/aform.css">
+    <!-- Internal CSS styles to design the page -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- for the icons  that we used in the section footer -->
+
+</head>
+
+<body>
+<!-- The body section holds everything visible on the webpage -->
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <img src="images/a111.png" alt="College Logo">
+        </div>
+        <div class="header-text">
+            <h1>ਸ਼੍ਰੀ ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਕਾਲਜ ਖਡੂਰ ਸਾਹਿਬ</h1>
+            <h2>SGAD College Khadur Sahib</h2>
+                <p>Affiliated to GNDU Amritsar</p>
+        </div>
+    </div>
+</header>
+
+    <nav>
+
+        <!-- Navigation bar -->
+        <a href="index.html" >Home</a>
+        <!-- Link to Home (currently placeholder #) -->
+        <a href="about.html" >About Us</a>
+        <!-- Link to About Us -->
+        <a href="courses.html">Courses</a>
+        <!-- Link to Courses -->
+        <a href="admissions.html" >Admissions</a>
+        <!-- Link to Admissions -->
+        <a href="contact.html ">Contact</a>
+        <!-- Link to Contact -->       
+        <a href="login1.html " >Login</a>
+        <!-- Link to log in as student -->
+        <a href="ssignin.html" >Sign in</a>
+        <!-- Link to log in as student --> 
+    </nav>
+
+<div class="container">
+    <div class="from-container">
+        <!-- Main content container -->
+        <div style="background-color: rgb(215, 231, 154); width: 70% ; text-align: center; margin: auto; border-radius: 75%;">
+              <h1 style="color: brown; font-size: 60px; font-style: oblique;">Admission Form</h1>
+            </div>
+      <br><br>
+      <div class="formbox">
+        <form action="/college-frontend/html/aform.html" method="post">
+            <!-- Form for admission details --> 
+             
+            <label for="name">Name :</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <br><br>
+
+            <label for="mname">Mother's Name :</label>
+            <input type="text1" id="text" name="name" placeholder="Enter Mother's Name" required>
+            <br><br>
+
+            <label for="fname">Father's Name :</label>
+            <input type="text2" id="text" name="name" placeholder="Enter Fathers Name" required>
+            <br><br>
+
+            <label for="dob">Date of Birth :</label>
+            <input type="date" id="dob" name="dob" placeholder="Enter your dote of birth" required>
+            <br><br>
+   
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+
+            <label for="phone">Phone :</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            <br><br>
+
+            <label for="Address">Address :</label>
+            <input type="text3" id="Address" name="Address" placeholder="Enter your Address" required>
+            <br><br>
+
+            <label for ="gender">Gender :</label>
+            <select id="Gender" name="gender" required>
+                <option value="">--Select--</option>
+                <option value="male">Male</option>
+                <option value="Female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="cast">Cast :</label>
+            <select id="cast" name="cast" required>
+                <option value="">--Select--</option>
+                <option value="general">General</option>
+                <option value="OBC">OBC</option>
+                <option value="SC">SC</option>
+                <option value="ST">ST</option>
+                <option value="EWS">EWS</option>
+                <option value="others">Others</option>
+            </select>
+
+            <br><br>
+            <label for="Subject">Course :</label>
+            <select id="Subject" name="Subject">
+                <option value="">--Select--</option>
+                <option value="+1">+1 Arts</option>
+                <option value="+1">+1 Commerce</option>
+                <option value="+1">+1 Non-Medical</option>
+                <option value="+2">+2 Arts</option>
+                <option value="+2">+2 Commerce</option>
+                <option value="+2">+2 Non-Medical</option>
+                <option value="B.A">B.A (hons)</option>
+                <option value="B.A">B.A (Social Scence)</option>
+                <option value="B.Sc.">B.Sc. (Economics)</option>
+                <option value="B.Sc.">B.Sc. (Computer Science)</option>
+                <option value="B.Sc.">B.Sc. (Non-Medical)</option>
+                <option value="B.Sc">B.Sc. (fashion Desgning)</option>
+                <option value="BCA">BCA (Bachelor of Computer Application)</option>
+                <option value="B.Sc(it)">B.Sc (Information Technology)</option>
+                <option value="B.Com">B.com. (Bachelor of Commerce)</option>
+                <option value="BBA">BBA (Bachelor of Bussiness Administration)</option>
+                <option value="MA">MA (Punjabi)</option>
+                <optiom Value="M.Sc.">M.Sc. (Information Technology)</optiom>
+                <option value="PGDCA">PGDCA (Post Graduation Diploma in Computer Application)</option>
+                <option value="DCA">DCA (Diploma in Computer Science)</option>
+                <option value="DST">DST (Diploma in Stitching & Tailoring)</option>
+                <option value="DISD&P">Diploma in Software Development & Programming</option>
+                <option value="DIOF">1 YEAR Diploma in Organic Farming</option>
+                <option value="GST">6 Months Certificate Course in GST Applications </option>
+
+            </select>
+            <br><br>
+            <label for="fileUpload"> Choose a file: </label>
+            <input type="file" id="fileUpload" name="fileUpload">
+            <br><br><br><br>
+   
+            <div class="sub">
+                <button type="submit" class="button1">REGISTER</button>
+                <!-- Submit button to send the form data -->
+            </div>
+                
+          
+        </form>
+        </div>
+    </div>
+</div>
+</body>
+    <section class="bottom-info">
+
+        <div class="col-1">
+            <h5 style="font-size: 30px; font-weight: bold;"> USEFUL LINKS</h5>
+            <a href="index.html" target="_blank">HOME</a>
+            <a href="about.html" target="_blank">ABOUT</a>
+            <a href="admissions.html" >ADMISSION</a>
+            <a href="courses.html" target="_blank">COURSES</a>
+            <a href="contact.html" target="_blank">CONTACT</a>
+        </div>
+
+ 
+        <div class="col-3">
+            <h5 style="font-size: 30px; font-weight: bold;">CONTACT</h5>
+            <P>Sri Guru Angad Dev College Khadur Sahib,<br> Distt-Tarn Taran,Punjab,India </P>
+            
+            <div class="social-icons">
+                
+                <a href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/sgadcollege?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+            <div class="col-2">
+                <img src="images/a111.png" width="200px" class="rounded-img">
+            </div>
+
+    </section>
+
+    <footer>
+        <!-- Footer section -->
+        &copy; 2025 Sri Guru Angad Dev College Khadur Sahib| All Rights Reserved
+        <!-- Copyright -->
+    </footer>
+
+</body>
+</html>
+<!-- End of HTML document -->
