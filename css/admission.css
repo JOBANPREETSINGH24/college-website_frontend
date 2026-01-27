@@ -106,7 +106,7 @@
             /* Adds padding around the content */
         }
         .admission-container{
-            background-color: rgba(255, 255, 255, 0.788);
+            background-color: rgba(255, 255, 255, 0.877);
             /* Semi-transparent white background */
             padding: 20px;
             margin-bottom: 20px;
@@ -115,7 +115,7 @@
 
 
 
-    .table-responsive {
+    .table-responsive1 {
         width: 100%; /* Full width for the table container */
         overflow-x: auto; /* Enables horizontal scrolling if needed */
     }
