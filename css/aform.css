@@ -19,7 +19,7 @@
 
         /*  Container for items inside header */
         .header-container {
-            background-color:rgb(206, 146, 6); /* Header background */
+            background-color:rgba(206, 146, 6, 0.875); /* Header background */
             padding: 10px 20px;                   /* Adds space inside the header */
             display: flex;                 /* Enables flexbox layout */
             align-items: center;           /* Vertically center items */
@@ -67,7 +67,7 @@
 
         /* for changing the color of the background of the  HOME ABOUT US COURSES ADMISSIONS AND CONTACT*/
         nav {
-            background-color: #004080;
+            background-color: hsla(210, 100%, 25%, 0.749);
             /* Dark background for navigation bar */
             overflow: hidden;
             /* Prevents content from overflowing */
@@ -101,33 +101,38 @@
         }
         
         .container{
-               padding: 30px;
-               /* Adds padding around the container */   
-               margin: auto;         
-        }
-
-        .from-container{
-            
-            width: 100%;
-            /* Full width */
-            padding: 20px;
+            padding: 50px;
+           /* Adds padding around the container */   
+            text-align: center;
             /* Padding around content */
+            background-color: #d6dee5ef;
+            /* Light background for form container */
             display: flex;
             /* Enables flexbox layout */
             flex-direction: column;
             /* Stacks items vertically */
             align-items: center;
             /* Centers items horizontally */
-            border-radius: 8px;
-            /* Rounded corners */            
+            border-radius: 30px;
+            /* Rounded corners */     
+            width: 1000px;
+            /* Fixed width */
+            margin: auto;
+            /* Centers the container */
+            margin-top: 50px;
+            /* Top margin */
+            margin-bottom: 50px;
+            /* Bottom margin */
         }
 
+
+
         .formbox{
-            padding: 50px;
-            border-radius: 50px;
-            border: 2px solid #d34f03;
-            background-color: #9bb3a1;
-            margin-bottom: 50px;
+            width: 1000px;
+            padding: 5px;
+            border-radius: 20px;
+            color: #630909;
+            margin-bottom: 5px;
         }
 
         input[type="text"] {
@@ -135,6 +140,7 @@
             height: 35px;   /* height of the box */
             padding: 5px;   /* inner spacing */
             font-size: 16px;    /* Font size */
+            
         }
 
         input[type="email"]
@@ -270,7 +276,7 @@
         .bottom-info {
             width: 100%;
             padding: 25px 5px;
-            background: #004080;
+            background: hsla(210, 100%, 25%, 0.875);
             color: #efefef;
             display: flex;
             text-align: center;

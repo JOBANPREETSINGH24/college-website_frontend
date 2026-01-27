@@ -21,7 +21,7 @@
 
         /*  Container for items inside header */
         .header-container {
-            background-color:rgb(206, 146, 6); /* Header background */
+            background-color:rgba(206, 146, 6, 0.875); /* Header background */
             padding: 10px 20px;                   /* Adds space inside the header */
             display: flex;                 /* Enables flexbox layout */
             align-items: center;           /* Vertically center items */
@@ -69,7 +69,7 @@
 
         /* for changing the color of the background of the  HOME ABOUT US COURSES ADMISSIONS AND CONTACT*/
         nav {
-            background-color: #004080;
+            background-color: hsla(210, 100%, 25%, 0.749);
             /* Dark background for navigation bar */
             overflow: hidden;
             /* Prevents content from overflowing */
@@ -104,7 +104,7 @@
 
 
          .container {
-            width: 800px;
+            width: 600px;
             margin: 20px auto;
             padding: 20px;
             border-radius: 40px;
@@ -115,13 +115,13 @@
 
         .welcome {
             border: 3px solid rgb(172, 120, 47);
-            background-color: hsla(212, 19%, 15%, 0.886);
+            background-color: hsla(212, 19%, 15%, 0.693);
             /* White background for welcome box */
             padding: 2px;
             /* Padding inside the box */
             margin-bottom: 20px;
             /* Space below the box */
-            border-radius: 90px;
+            border-radius: 10px;
             /* Rounded corners */
             text-align: center;
             
@@ -213,7 +213,7 @@
         .bottom-info {
             width: 100%;
             padding: 25px 5px;
-            background: #004080;
+            background: hsla(210, 100%, 25%, 0.875);
             color: #efefef;
             display: flex;
             text-align: center;

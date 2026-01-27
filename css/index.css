@@ -8,8 +8,6 @@
             /* Sets the font for the body */
             margin: 0;
             /* Removes default margins */
-            background-color: #ffffff;
-            /* Light gray background color */
             background-image: url("../images/a2.jpg");
             background-size: cover;          /* Image covers full body*/
             background-repeat: no-repeat;    /* No tiling*/
@@ -21,7 +19,7 @@
 
         /*  Container for items inside header */
         .header-container {
-            background-color:rgb(206, 146, 6); /* Header background */
+            background-color:rgba(206, 146, 6, 0.875); /* Header background */
             padding: 10px 20px;                   /* Adds space inside the header */
             display: flex;                 /* Enables flexbox layout */
             align-items: center;           /* Vertically center items */
@@ -69,7 +67,7 @@
 
         /* for changing the color of the background of the  HOME ABOUT US COURSES ADMISSIONS AND CONTACT*/
         nav {
-            background-color: #004080;
+            background-color: hsla(210, 100%, 25%, 0.749);
             /* Dark background for navigation bar */
             overflow: hidden;
             /* Prevents content from overflowing */
@@ -112,7 +110,7 @@
         }
 
         .welcome {
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.788);
             /* White background for welcome box */
             padding: 20px ;
             /* Padding inside the box */
@@ -122,7 +120,7 @@
             /* Rounded corners */
         }
         .welcome2 {
-            background-color: rgb(255, 255, 255);
+            background-color: rgba(255, 255, 255, 0.788);
             /* White background for welcome box */
             padding: 20px;
             /* Padding inside the box */
@@ -133,7 +131,7 @@
         }
 
         .principal {
-            background-color: rgb(255, 255, 255);
+            background-color: rgba(255, 255, 255, 0.788);
             /* White background for welcome box */
             padding: 20px;
             /* Padding inside the box */
@@ -147,7 +145,7 @@
         .bottom-info {
             width: 100%;
             padding: 25px 5px;
-            background: #004080;
+            background: hsla(210, 100%, 25%, 0.875);
             color: #efefef;
             display: flex;
             text-align: center;
