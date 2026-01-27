@@ -8,8 +8,6 @@
             /* Sets the font for the body */
             margin: 0;
             /* Removes default margins */
-            background-color: #ffffff;
-            /* Light gray background color */
             background-image: url("../images/a2.jpg");
             background-size: cover;          /* Image covers full body*/
             background-repeat: no-repeat;    /* No tiling*/
@@ -109,8 +107,7 @@
         }
 
         .from-container{
-            background-color: #ffffff;
-            /* White background for form container */
+            
             width: 100%;
             /* Full width */
             padding: 20px;

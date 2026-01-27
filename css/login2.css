@@ -105,7 +105,7 @@
 
 
          .container {
-            width: 800px;
+            width: 1500px;
             margin: 20px auto;
             padding: 20px;
             border-radius: 40px;
@@ -115,16 +115,17 @@
 
         .welcome {
             border: 3px solid rgb(172, 120, 47);
-            background-color: hsla(212, 19%, 15%, 0.886);
+            background-color: hsla(212, 19%, 15%, 0.652);
             /* White background for welcome box */
             padding: 2px;
             /* Padding inside the box */
             margin-bottom: 20px;
             /* Space below the box */
-            border-radius: 90px;
+            border-radius: 10px;
             /* Rounded corners */
             text-align: center;
             letter-spacing: 5px;
+
         }
 
         .boxes input {

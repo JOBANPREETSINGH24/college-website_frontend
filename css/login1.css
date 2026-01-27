@@ -3,21 +3,20 @@
             padding: 0;
             box-sizing: border-box;
         }
-                body {
+        body {
             font-family: Arial, sans-serif;
             /* Sets the font for the body */
             margin: 0;
             /* Removes default margins */
-            background-color: #ffffff;
-            /* Light gray background color */
             background-image: url("../images/a2.jpg");
             background-size: cover;          /* Image covers full body*/
             background-repeat: no-repeat;    /* No tiling*/
             background-position: center;     /* Centered */
-                    height: 880px;
+            height: 880px;
             background-attachment: fixed;
 
         }
+
 
         /*  Container for items inside header */
         .header-container {
@@ -105,7 +104,7 @@
 
         
          .container {
-            width: 800px;
+            width: 1500px;
             margin: 20px auto;
             padding: 20px;
             border-radius: 40px;
@@ -115,16 +114,17 @@
 
         .welcome {
             border: 3px solid rgb(20, 86, 123);
-            background-color: hsla(251, 20%, 16%, 00.886);
+            background-color: hsla(251, 20%, 16%, 0.605);
             /* White background for welcome box */
             padding: 2px;
             /* Padding inside the box */
             margin-bottom: 20px;
             /* Space below the box */
-            border-radius: 90px;
+            border-radius: 10px;
             /* Rounded corners */
             text-align: center;
             letter-spacing: 5px;
+
         }
 
         .boxes input {

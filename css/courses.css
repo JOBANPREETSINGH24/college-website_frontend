@@ -149,8 +149,8 @@
                 opacity: 1;
             } /* Fades in to 100% opacity */
             50% {
-                opacity: 0; /* Fades out to 0% opacity */
-            }
+                opacity: 0;
+            } /* Fades out to 50% opacity */
         }
         .btn:hover {
             background-color: #90c3c3;
