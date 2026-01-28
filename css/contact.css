@@ -102,16 +102,18 @@
             /* Changes background when mouse hovers */
         }
 
-        .container {
-            padding: 100px;
-            /* Padding around content */
+        .contact-section{
+        background-color: #d7cdb0ea;
+        border-radius: 0px;
+        padding: 50px ;
+        height: 750px;
         }
+
         /* -------------body of the courses------------------ */
         .contact{
-            background-color: #ffffff;
-            padding: 20px ;
-            margin-bottom: 20px;
-            border-radius: 8px;
+            background-color: #96a674;
+            padding: 50px ;
+
         }        
         .info-item1 {
             margin-bottom: 20px;
