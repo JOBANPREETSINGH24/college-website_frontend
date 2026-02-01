@@ -67,10 +67,11 @@
 
         /* for changing the color of the background of the  HOME ABOUT US COURSES ADMISSIONS AND CONTACT*/
         nav {
-            background-color: hsla(210, 100%, 25%, 0.749);
+            background-color: hsla(210, 17%, 18%, 0.749);
             /* Dark background for navigation bar */
             overflow: hidden;
             /* Prevents content from overflowing */
+
         }
 
         nav a {
@@ -88,7 +89,9 @@
             /* Adds a right border to each link */
             border-top: 1px solid #ffffff; 
             /* Adds a top border to each link */
-
+            border-left: #ffffff solid 1px;
+            border-bottom: #ffffff solid 1px;
+            border-radius: 20px;
         }
 
         nav a.active {
