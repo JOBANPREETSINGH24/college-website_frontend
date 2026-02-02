@@ -24,18 +24,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION['EnrollmentNumber'] = $student['EnrollmentNumber'];
 
             // Redirect immediately to another page, e.g., dashboard.php
-            header("Location: ../dashboard.php");
+            header("Location: ../admissions.html");
             exit(); // important to stop further execution
         } else {
             // Redirect to login page with error message
             $_SESSION['login_error'] = "Incorrect Created Password!";
-            header("Location: ../login1.html");
+            header("Location: ../login_error.html");
             exit();
         }
     } else {
-        $_SESSION['login_error'] = "No student found with this Enrollment Number!";
-        header("Location: ../login1.html");
+        $_SESSION['login_error'] = "Incorrect Created Password!";
+        header("Location: ../login_error.html");
         exit();
+
     }
 
     mysqli_close($conn);
@@ -44,3 +45,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     exit();
 }
 ?>
+ 
