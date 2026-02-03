@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION['EnrollmentNumber'] = $student['EnrollmentNumber'];
 
             // Redirect immediately to another page, e.g., dashboard.php
-            header("Location: ../admissions.html");
+            header("Location: ../aform.html");
             exit(); // important to stop further execution
         } else {
             // Redirect to login page with error message
