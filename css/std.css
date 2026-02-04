@@ -66,15 +66,14 @@
         }
         .logo1 img {
             border-radius: 100px;
-            width: 90px;   /* Set logo width (increase/decrease size here) */
+            width: 70px;   /* Set logo width (increase/decrease size here) */
             height: auto;   /* Auto height to maintain aspect ratio */
         }
         .logo1 p{
             color: #002244;
-            font-size: 12px;
+            font-size: 10px;
 
         }
-
 
         /* for changing the color of the background of the  HOME ABOUT US COURSES ADMISSIONS AND CONTACT*/
         nav {
@@ -82,7 +81,6 @@
             /* Dark background for navigation bar */
             overflow: hidden;
             /* Prevents content from overflowing */
-
         }
 
         nav a {
@@ -115,19 +113,47 @@
             /* Changes background when mouse hovers */
         }
 
+        
+
+    
+
         .container {
-            padding: 100px;
+            padding: 50px;
             /* Padding around content */
         }
-        .Student {
-            background-color: rgb(255, 255, 255);
-            /* White background for about section */
+
+        .welcome {
+            background-color: rgba(255, 255, 255, 0.788);
+            /* White background for welcome box */
+            padding: 20px ;
+            /* Padding inside the box */
+            margin-bottom: 20px;
+            /* Space below the box */
+            border-radius: 8px;
+            /* Rounded corners */
+        }
+        .welcome2 {
+            background-color: rgba(255, 255, 255, 0.788);
+            /* White background for welcome box */
             padding: 20px;
+            /* Padding inside the box */
+            margin-bottom: 20px;
+            /* Space below the box */
             border-radius: 8px;
             /* Rounded corners */
         }
 
-
+        .principal {
+            background-color: rgba(255, 255, 255, 0.788);
+            /* White background for welcome box */
+            padding: 20px;
+            /* Padding inside the box */
+            margin-bottom: 20px;
+            /* Space below the box */
+            border-radius: 8px;
+            /* Rounded corners */
+            
+        }
 /* ------for blue footer section------- */
         .bottom-info {
             width: 100%;
@@ -139,11 +165,12 @@
             
         }
 
+
 /*-------for adding flex batween three divs-------  */
         .bottom-info .col-1, 
         .bottom-info .col-3,
         .bottom-info .col-2{
-                flex: 1;
+                flex: 1%;
         }
         
         /* ---for the all words in th header */
@@ -159,9 +186,11 @@
             color: #efefef;
             margin-bottom: 10px;   
         }
+
         .col-2 .rounded-img {
             border-radius: 100px;
         }
+
 
     /* ---- for editing the icons that we used in the col-2----- */
         .social-icons{

@@ -21,17 +21,17 @@
         .header-container {
             background-color:rgba(206, 146, 6, 0.875); /* Header background */
             padding: 10px 20px;                   /* Adds space inside the header */
-            display: flex;                 /* Enables flexbox layout */
-            align-items: center;           /* Vertically center items */
-            justify-content: center; /* centers horizontally */
+            display: flex ;                 /* Enables flexbox layout */
+            flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+            
         }
 
         /*  Logo styling */
         .logo img {
-            padding: 10px;
             border-radius: 100px;
-            width: 150px;   /* Set logo width (increase/decrease size here) */
+            width: 100px;   /* Set logo width (increase/decrease size here) */
             height: auto;   /* Auto height to maintain aspect ratio */
+            margin-left: 100px;
         }
 
         /*  Text container styling */
@@ -41,29 +41,40 @@
 
         /*  Main heading (college name) */
         .header-text h1 {
-            margin: 0;          /* Remove default margin */
-            font-size: 35px;    /* Font size */
+            margin-left: 10px; /* Remove default margin */
+            font-size: 30px;    /* Font size */
             color: #002244;     /* Dark blue color */
             font-weight: bold;          /* Makes the text bold */
             letter-spacing: 2px;
             text-shadow: 3px 3px 5px #dfae0f;    /* 1 3px is for horizontal offset-> rgt by 3px, 2 3px for vertically offset ->down by 3px and 5px is for blur radius (soft/fuzzy) etc*/
         }
        .header-text h2 {
-            margin: 0;          /* Remove default margin */
+            margin-left: 10px; /* Remove default margin */
             font-size: 40px;    /* Font size */
             color: #002244;     /* Dark blue color */
             font-weight: bold;          /* Makes the text bold */
             letter-spacing: 2px;
         }
 
-        /*  Subheading (affiliation) */
-        .header-text p {
-            margin: 0;          /* Remove default margin */
-            font-size: 25px;    /* Slightly smaller font */
-            color: #002244;     /* Medium blue */
-            font-weight: bold;      /* Makes the text bold */
-            letter-spacing: 2px;
+        .logo1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto; /* Pushes the logo1 to the far right */
+            margin-right: 100px;
         }
+        .logo1 img {
+            border-radius: 100px;
+            width: 90px;   /* Set logo width (increase/decrease size here) */
+            height: auto;   /* Auto height to maintain aspect ratio */
+        }
+        .logo1 p{
+            color: #002244;
+            font-size: 12px;
+
+        }
+
 
         /* for changing the color of the background of the  HOME ABOUT US COURSES ADMISSIONS AND CONTACT*/
         nav {
