@@ -1,0 +1,114 @@
+-- Create the database
+CREATE DATABASE IF NOT EXISTS college_db;
+
+-- Use the database
+USE college_db;
+
+======STUDENTS TABLE====== 
+
+CREATE TABLE student (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+
+    FullName VARCHAR(100) NOT NULL,
+    Email VARCHAR(150) NOT NULL UNIQUE,
+    
+    EnrollmentNumber INT(5) NOT NULL UNIQUE,
+    
+    Password VARCHAR(255) NOT NULL,
+
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+======TEACHERS  TABLE====== 
+
+CREATE TABLE teacher (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+
+    FullName VARCHAR(100) NOT NULL,
+    Email VARCHAR(150) NOT NULL UNIQUE,
+
+    EmployeeID INT(5) NOT NULL UNIQUE,
+
+    Password VARCHAR(255) NOT NULL,
+
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+======TEACHERS UPLOADED IMAGES======
+
+CREATE TABLE teacher_images (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+
+    image_name VARCHAR(255) NOT NULL,
+
+    uploaded_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+======STUDENTUSER======
+
+CREATE TABLE studentuser (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+
+    Email VARCHAR(150) NOT NULL,
+
+    Password VARCHAR(255) NOT NULL,
+
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+=====ADMISSIONS======
+
+CREATE TABLE admissions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+
+    name VARCHAR(100) NOT NULL CHECK (name REGEXP '^[A-Za-z ]+$'),
+    mother_name VARCHAR(100) NOT NULL CHECK (mother_name REGEXP '^[A-Za-z ]+$'),
+    father_name VARCHAR(100) NOT NULL CHECK (father_name REGEXP '^[A-Za-z ]+$');
+
+    dob DATE NOT NULL,
+
+    email VARCHAR(150) NOT NULL,
+    phone VARCHAR(15) NOT NULL,
+
+    school_12th VARCHAR(150) NOT NULL,
+    percentage_12th DECIMAL(5,2) NOT NULL,
+    passing_year_12th YEAR NOT NULL,
+
+    address TEXT NOT NULL,
+
+    gender ENUM('male','Female','other') NOT NULL,
+
+    caste ENUM('general','OBC','SC','ST','EWS','others') NOT NULL,
+
+    course ENUM(
+        '+1 Arts',
+        '+1 Commerce',
+        '+1 Non-Medical',
+        '+2 Arts',
+        '+2 Commerce',
+        '+2 Non-Medical',
+        'B.A (Hons)',
+        'B.A (Social Science)',
+        'B.Sc (Economics)',
+        'B.Sc (Computer Science)',
+        'B.Sc (Non-Medical)',
+        'B.Sc (Fashion Designing)',
+        'BCA (Bachelor of Computer Application)',
+        'B.Sc (Information Technology)',
+        'B.Com (Bachelor of Commerce)',
+        'BBA (Bachelor of Business Administration)',
+        'MA (Punjabi)',
+        'M.Sc (Information Technology)',
+        'PGDCA (Post Graduation Diploma in Computer Application)',
+        'DCA (Diploma in Computer Science)',
+        'DST (Diploma in Stitching & Tailoring)',
+        'Diploma in Software Development & Programming',
+        '1 Year Diploma in Organic Farming',
+        '6 Months Certificate Course in GST Applications'
+    ) NOT NULL,
+
+    course_type ENUM('Full Time','Part Time') NOT NULL,
+
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+

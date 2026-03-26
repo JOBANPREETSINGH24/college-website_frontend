@@ -1,0 +1,360 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            /* Sets the font for the body */
+            margin: 0;
+            /* Removes default margins */
+            background-image: url("../images/14.jpeg");
+            background-size: cover;
+            /* Image covers full body*/
+            background-repeat: no-repeat;
+            /* No tiling*/
+            background-position: center;
+            /* Centered */
+            min-height: 100vh;
+            background-attachment: fixed;
+
+        }
+
+        /*  Container for items inside header */
+        .header-container {
+            background-color: rgb(206, 146, 6);
+            /* Header background */
+            padding: 10px 20px;
+            /* Adds space inside the header */
+            display: flex;
+            /* Enables flexbox layout */
+            flex-wrap: wrap;
+            /* Allows items to wrap to the next line if needed */
+
+        }
+
+        /*  Logo styling */
+        .logo img {
+            border-radius: 100px;
+            width: 100px;
+            /* Set logo width (increase/decrease size here) */
+            height: auto;
+            /* Auto height to maintain aspect ratio */
+            margin-left: 100px;
+        }
+
+        /*  Text container styling */
+        .header-text {
+            margin-left: 0px;
+            /* Space between logo and text */
+        }
+
+        /*  Main heading (college name) */
+        .header-text h1 {
+            margin-left: 10px;
+            /* Remove default margin */
+            font-size: 30px;
+            /* Font size */
+            color: #002244;
+            /* Dark blue color */
+            font-weight: bold;
+            /* Makes the text bold */
+            letter-spacing: 2px;
+            text-shadow: 3px 3px 5px #dfae0f;
+            /* 1 3px is for horizontal offset-> rgt by 3px, 2 3px for vertically offset ->down by 3px and 5px is for blur radius (soft/fuzzy) etc*/
+        }
+
+        .header-text h2 {
+            margin-left: 10px;
+            /* Remove default margin */
+            font-size: 40px;
+            /* Font size */
+            color: #002244;
+            /* Dark blue color */
+            font-weight: bold;
+            /* Makes the text bold */
+            letter-spacing: 2px;
+        }
+
+        .logo1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            /* Pushes the logo1 to the far right */
+            margin-right: 100px;
+        }
+
+        .logo1 img {
+            border-radius: 100px;
+            width: 90px;
+            /* Set logo width (increase/decrease size here) */
+            height: auto;
+            /* Auto height to maintain aspect ratio */
+        }
+
+        .logo1 p {
+            color: #002244;
+            font-size: 12px;
+
+        }
+
+
+        /* for changing the color of the background of the  HOME ABOUT US COURSES ADMISSIONS AND CONTACT*/
+        nav {
+            background-color: hsl(210, 17%, 18%);
+            /* Dark background for navigation bar */
+            overflow: hidden;
+            /* Prevents content from overflowing */
+            display: flex;
+            gap: 1px;
+            justify-content: left;
+            /* Centers the navigation links */
+        }
+
+        nav a {
+            color: white;
+            /* Link text color */
+            text-align: center;
+            /* Centers text inside link */
+            padding: 14px 20px;
+            /* Padding around link text */
+            text-decoration: none;
+            /* Removes underline from links */
+            border-right: 1px solid #ffffff;
+            /* Adds a right border to each link */
+            border-top: 1px solid #ffffff;
+            /* Adds a top border to each link */
+            border-left: #ffffff solid 1px;
+            /* Adds a left border to each link */
+            border-bottom: #ffffff solid 1px;
+            /* Adds a bottom border to each link */
+            border-radius: 20px;
+            /* Rounds the corners of the links */
+            margin-left: 10px;
+        }
+
+        nav a.active {
+            background-color: #1a746a;
+            /* Darker shade */
+            color: #ffffff;
+            /* Keep text white */
+        }
+
+        nav a:hover {
+            background-color: #90c3c3;
+            /* Changes background when mouse hovers */
+        }
+
+        /* -------------body of the courses------------------ */
+        .container {
+            padding: 50px;
+        }
+
+        .welcome {
+            background-color: rgba(255, 255, 255, 0.877);
+            /* White background for welcome box */
+            padding: 20px;
+            /* Padding inside the box */
+            margin-bottom: 20px;
+            /* Space below the box */
+            border-radius: 8px;
+            /* Rounded corners */
+        }
+
+        .course {
+            text-align: center;
+            /* Centered text for course list */
+        }
+
+        .courses-ol {
+            list-style-position: inside;
+            /* Numbers stay inside the text block */
+        }
+
+        .button {
+            text-align: center;
+            /* Center the button */
+            margin-top: 20px;
+            /* Space above the button */
+        }
+
+        .btn {
+
+            background-color: #ff3a04;
+            /* Button background color */
+            color: white;
+            /* Button text color */
+            padding: 10px 20px;
+            /* Padding inside the button */
+            text-decoration: none;
+            /* No underline */
+            border-radius: 95px;
+            /* Rounded corners */
+            animation: blink 1.5s infinite;
+            /* Blinking effect */
+        }
+
+        @keyframes blink {
+
+            /* Animation for blinking effect */
+            /* @keyframes defines the animation */
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            /* Fades in to 100% opacity */
+            50% {
+                opacity: 0;
+            }
+
+            /* Fades out to 50% opacity */
+        }
+
+        .btn:hover {
+            background-color: #90c3c3;
+            /* Lighter color on hover */
+        }
+
+        
+
+        /* ------for blue footer section------- */
+        .bottom-info {
+            width: 100%;
+            padding: 25px 5px;
+            background: hsl(210, 100%, 25%);
+            color: #efefef;
+            display: flex;
+            text-align: center;
+
+        }
+
+
+        /*-------for adding flex batween three divs-------  */
+        .bottom-info .col-1,
+        .bottom-info .col-3,
+        .bottom-info .col-2 {
+            flex: 1;
+        }
+
+        /* ---for the all words in th header */
+        .bottom-info div h5 {
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+
+        /* -----for links in the 1st div------ */
+        .col-1 a {
+            display: block;
+            text-decoration: none;
+            color: #efefef;
+            margin-bottom: 10px;
+        }
+
+        .col-1 a:hover {
+            color: #0fc5ac;
+            /* Changes link color on hover */
+        }
+
+        .col-2 .rounded-img {
+            border-radius: 100px;
+        }
+
+
+        /* ---- for editing the icons that we used in the col-2----- */
+        .social-icons {
+            margin-top: 50px;
+        }
+
+        .social-icons i {
+            color: white;
+            /* Default color */
+            font-size: 25px;
+            /* Optional: change size */
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .social-icons i:hover {
+            color: #90c3c3;
+            /* Color on hover */
+        }
+
+        footer {
+            background-color: #d34f03;
+            /* Same dark blue as header */
+            color: white;
+            /* White text */
+            text-align: center;
+            /* Centered text */
+            padding: 15px 0;
+            /* Padding top and bottom */
+            width: 100%;
+            /* Full width */
+        }
+
+
+
+        /* Remove horizontal scroll */
+        html,
+        body {
+            overflow-x: hidden;
+        }
+
+        /* Make images responsive */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* ================= MOBILE ================= */
+        @media (max-width: 768px) {
+
+            /* Header becomes vertical */
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .logo img,
+            .logo1 img {
+                margin: 10px 0;
+            }
+
+            .header-text h1 {
+                font-size: 20px;
+            }
+
+            .header-text h2 {
+                font-size: 24px;
+            }
+
+            /* Navbar stack */
+            nav {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+            }
+
+            nav a {
+                width: 90%;
+                margin: 5px 0;
+                text-align: center;
+            }
+
+            /* Welcome box center */
+            .welcome-box {
+                width: 90%;
+                margin: auto;
+                padding: 20px;
+            }
+
+            /* Reduce big paddings */
+            .container {
+                padding: 15px;
+            }
+
+        }
